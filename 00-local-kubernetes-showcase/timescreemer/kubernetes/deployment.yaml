@@ -43,7 +43,7 @@ spec:
           type: Directory
       - name: nginx-conf
         hostPath:
-          path: /home/tinostoeckel/dev/repos/pandorasnox/presentations/00-local-kubernetes-showcase/timescreemer/docker/httpserver/nginx/conf
+          path: /home/tinostoeckel/dev/repos/pandorasnox/presentations/00-local-kubernetes-showcase/timescreemer/kubernetes/container/httpserver/nginx/conf
           type: Directory
       - name: nginx-logs
         hostPath:
