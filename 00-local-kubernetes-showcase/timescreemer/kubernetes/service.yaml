@@ -1,0 +1,22 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: timescreemer
+  name: timescreemer-service
+  namespace: default
+spec:
+  ports:
+  - name: port-1
+    nodePort: 31484
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: timescreemer
+  # sessionAffinity: None
+  type: LoadBalancer #<= this works
+  # type: NodePort #<= this works too
+status:
+  loadBalancer: {}
