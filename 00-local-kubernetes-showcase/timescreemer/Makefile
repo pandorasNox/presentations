@@ -18,3 +18,16 @@ help: ##@other Show this help.
 .PHONY: docker-compose-up
 docker-compose-up: ##@development create + start docker containers
 	docker-compose up
+
+.PHONY: minikube-start
+minikube-start: ##@setup inits minikube.
+	$(MAKE) minikube-init
+	$(MAKE) minikube-await
+
+.PHONY: minikube-init
+minikube-init: 
+	./hack/minikube/start-minikube.sh
+
+.PHONY: minikube-await
+minikube-await: 
+	./hack/minikube/await-minikube.sh
