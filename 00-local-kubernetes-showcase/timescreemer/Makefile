@@ -15,6 +15,6 @@ HELP_FUN = \
 help: ##@other Show this help.
 	@perl -e '$(HELP_FUN)' $(MAKEFILE_LIST)
 
-.PHONY: dc-up
-dc-up: ##@development start docker containers
+.PHONY: docker-compose-up
+docker-compose-up: ##@development create + start docker containers
 	docker-compose up
