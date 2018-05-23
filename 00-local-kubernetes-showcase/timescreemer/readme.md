@@ -19,3 +19,15 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+
+## custom
+
+### kubectl shortcuts
+login to a container in a pod (with two containers)
+`kubectl create -f kubernetes/deployment.yaml`
+`kubectl exec -it <podname> -c <containerName> -- /bin/sh`
+`kubectl apply -f kubernetes/deployment.yaml`
+`kubectl logs timescreemer-deploy-9d87c6b54-fn9vs -c httpserver`
+`kubectl describe pod timescreemer-deploy-7448cc9556-vdcgb`
+`envsubst <kubernetes/deployment.yaml`
