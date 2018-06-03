@@ -34,6 +34,8 @@ bar
 - How the JAMStack can change your website requirements
     - Gatsby and react-static comapred
     - Gatsby or react-static, a solution to the problem
+- advanced static-site generators
+    - conclusion into the JAMStack
 - ...
 
 <!-- ---------- ---------- ---------- -->
