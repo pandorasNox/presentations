@@ -19,9 +19,10 @@ revealOptions:
 
 Note:
 test note
-<br />
-fooo
-bar
+
+fooo bar
+
+baz
 
 <!-- ========== ========== ========== -->
 
@@ -63,3 +64,17 @@ $ foo bar --baz
 -> conclusion
 ```
 <!-- <div> -->
+
+<!-- ========== ========== ========== -->
+
+Do I want to talk about:
+- the JAMStack principles?
+or
+- website requirements
+or
+- How modern static-site generators can build (modern) high quality websites
+    - a Gatsby.js and react-static case study
+
+What do I want and how not to bore the audience
+
+
