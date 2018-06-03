@@ -1,0 +1,51 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: timescreemer-deploy
+  labels:
+    app: timescreemer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: timescreemer
+  template:
+    metadata:
+      labels:
+        app: timescreemer
+    spec:
+      containers:
+      - name: timescreemer
+        image: php:7.1.11-fpm-alpine3.4
+        ports:
+        - containerPort: 9000
+        workingDir: "/source"
+        volumeMounts:
+        - mountPath: "/source"
+          name: app-source
+      - name: httpserver
+        image: nginx:1.13-alpine
+        ports:
+        - containerPort: 80
+        workingDir: "/source"
+        volumeMounts:
+        - name: app-source
+          mountPath: "/source"
+        - name: nginx-conf
+          mountPath: "/etc/nginx/conf.d"
+        - name: nginx-logs
+          mountPath: "/var/log/nginx"
+      volumes:
+      - name: app-source
+        hostPath:
+          path: /home/tinostoeckel/dev/repos/pandorasnox/presentations/00-local-kubernetes-showcase/timescreemer
+          type: Directory
+      - name: nginx-conf
+        hostPath:
+          path: /home/tinostoeckel/dev/repos/pandorasnox/presentations/00-local-kubernetes-showcase/timescreemer/kubernetes/container/httpserver/nginx/conf
+          type: Directory
+      - name: nginx-logs
+        hostPath:
+          path: /home/tinostoeckel/dev/repos/pandorasnox/presentations/00-local-kubernetes-showcase/timescreemer/docker/httpserver/nginx/logs
+          type: Directory
