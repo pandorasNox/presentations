@@ -20,7 +20,7 @@
     - is it possible?
     - why do we want this (bec its fast)
 
-- what options do we have local, and how does they work? (or does they even worl)
+- what options do we have local, and how does they work? (or does they even work)
 
 - do you know why docker is so successful?
     - its really developer friendly

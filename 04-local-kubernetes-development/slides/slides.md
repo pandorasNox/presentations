@@ -1,13 +1,13 @@
 ---
-title: Foobar
+title: the different shapes of local kubernetes development
 separator: <!-- ========== ========== ========== -->
 verticalSeparator: <!-- ---------- ---------- ---------- -->
-theme: solarized
+theme: sky
 revealOptions:
     # transition: 'fade'
 ---
 
-# Foo
+## the different shapes of local kubernetes development
 
 Note: test note
 
