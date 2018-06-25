@@ -3,17 +3,62 @@ Title ideas:
 - the different shapes of local kubernetes development
 - local kubernetes workflows
 
+- today I want to tak about three topics
+    - kubernetes
+    - (developer) workflow
+    - local development
 
-- ?
-    - did you remember the last time you played a video game?
-        - discovert a dangeon
-        - enabled new equipment
-        - which brought you to a hole new level?
-        - something which turned the world upside down?
+- do I have to explain container?
+    - ...
 
 - what is kubernetes?
     - "" 
     - it has a huge share of ops work
+    - Kelsey Hightower
+        - Kubernetes is an infrastructure framework. It's YAML based configuration files and the kubectl command line tool make it approachable to developers, but far from the developer productivity you find in a PaaS or FaaS platform.
+        - Docker wrote the developer story. Kubernetes expanded the narrative and added some new chapters, but the story has no ending.
+        - Kubernetes is a framework for bulding distributed platforms
+    - kubernetes lets tread the underlaying data-center as one massive computer
+    - sits right above the hardware layer
+        - abstracts it completly
+    - treads nodes as just resources
+    - concepts
+        - declarative - YAML based configuration
+            - describe the **desired state**
+            - 
+        - contract
+        - container runtime is the contract
+            - packagin
+
+- I want to talk about workflow
+    - I want to talk anout docker
+    - docker is the precessor to kubernetes
+    - do you know why it is / was so successful?
+        - first of it did something really clever with LXC
+        - clever packaging around this technologie
+        - but there is more
+        - simple base concept
+            - Dockerfile
+            - docker image
+            - docker container
+        - sitenote: its always the talk about container eg. container runtime
+        - provies
+            - the right friendly tools
+            - the right firendly workflow
+
+- another example
+    - cloud providers
+    - aws, google, digitalocean
+    - build a very high abstraction over infrasturcture
+    - even more, they provide easy acces for developers
+        - via gui
+        - via api's
+
+-----
+
+... and yet again, I'll talk about workflow
+- make it easy for you developers
+    - provide them with a nice workflow
 
 - a question to ask
     - what is your role?
@@ -130,3 +175,15 @@ Title ideas:
     - can to apps use the same pv
     - how does the pc organize this if its possible?
         - reattaching, how does it work?
+
+
+============
+
+anecdoetes
+
+- ?
+    - did you remember the last time you played a video game?
+        - discovert a dangeon
+        - enabled new equipment
+        - which brought you to a hole new level?
+        - something which turned the world upside down?
