@@ -78,3 +78,32 @@ or
 What do I want and how not to bore the audience
 
 
+<!-- ========== ========== ========== -->
+
+15 slides for each requirement
+
+- build blog
+    how in gatsby
+    how in react-static
+assets
+developerfriendly
+custom routs
+ssr
+deployment
+routing + keep state
+assets/css-in-js
+content (contentful, netify, wordpress, mixed content from 3 sources youtube, blog, etc)
+redux/context-api
+sessio/local storage anbindung
+SEO friendly
+caching
+page generation time (1000 Seiten exponentielles Wachstum)
+integration oldshool css frameworks (bootstrap)???
+authentication jwt / auth0 / netlify / keycloak
+
+<!-- ========== ========== ========== -->
+
+idee only react-static + website requirements
+
+<!-- ========== ========== ========== -->
+
