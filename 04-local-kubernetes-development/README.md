@@ -10,3 +10,9 @@ make start-talk
 ```
 make env
 ```
+
+
+## presentation
+Titel: The different shades of local kubernetes development
+Abstract:
+In a world for developer and cloud native apps we should not forget about our local workflows to keep the developer throuhput smooth and in a flow. Since Kubernetes gots a lot of traction and is currently right in the center of this debate we shall not miss to grasp a look at its local capabilities, workflows, flaws and it's quirks.
