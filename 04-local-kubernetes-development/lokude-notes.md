@@ -42,9 +42,18 @@ Title ideas:
             - docker image
             - docker container
         - sitenote: its always the talk about container eg. container runtime
-        - provies
+        - provides
             - the right friendly tools
             - the right firendly workflow
+
+- what are you doing local
+    - write some code
+    - have some sorts of env
+    - check it
+        - tests (watch)
+        - in the browser
+        - postman
+        - db client
 
 - another example
     - cloud providers
