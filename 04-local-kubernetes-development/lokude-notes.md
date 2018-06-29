@@ -12,13 +12,12 @@ Title ideas:
     - ...
 
 - what is kubernetes?
-    - "" 
-    - it has a huge share of ops work
+    - is an amazing abstraction layer over your hardware
+    - kubernetes lets tread the underlaying data-center as one massive computer
     - Kelsey Hightower
         - Kubernetes is an infrastructure framework. It's YAML based configuration files and the kubectl command line tool make it approachable to developers, but far from the developer productivity you find in a PaaS or FaaS platform.
         - Docker wrote the developer story. Kubernetes expanded the narrative and added some new chapters, but the story has no ending.
         - Kubernetes is a framework for bulding distributed platforms
-    - kubernetes lets tread the underlaying data-center as one massive computer
     - sits right above the hardware layer
         - abstracts it completly
     - treads nodes as just resources
@@ -29,9 +28,30 @@ Title ideas:
         - contract
         - container runtime is the contract
             - packagin
+    - its a collection of different tools
+        - which follow conventions
+        - each of these components is pluggable and exchangable
+        - best example is the network layer
+            - weave
+            - flannel
+            - ...
 
-- I want to talk about workflow
-    - I want to talk anout docker
+How or even can this integrate with our local workflow?
+
+- (developer) Workflow
+    - I want to talk about workflow
+
+- what are you doing local
+    - write some code
+    - have some sorts of env
+    - check it
+        - tests (watch)
+        - in the browser
+        - postman
+        - db client
+
+- docker 
+    - I want to talk about docker
     - docker is the precessor to kubernetes
     - do you know why it is / was so successful?
         - first of it did something really clever with LXC
@@ -46,15 +66,6 @@ Title ideas:
             - the right friendly tools
             - the right firendly workflow
 
-- what are you doing local
-    - write some code
-    - have some sorts of env
-    - check it
-        - tests (watch)
-        - in the browser
-        - postman
-        - db client
-
 - another example
     - cloud providers
     - aws, google, digitalocean
@@ -62,6 +73,14 @@ Title ideas:
     - even more, they provide easy acces for developers
         - via gui
         - via api's
+-----
+
+If we talk about workflow
+we also have to ask
+- what kind of role do I fullfill
+- what kind of workflow needs this role?
+
+what kind of workflow do you need (based on your position)
 
 -----
 
@@ -185,6 +204,12 @@ Title ideas:
     - how does the pc organize this if its possible?
         - reattaching, how does it work?
 
+============
+
+- we want always get as close to production as possible
+    - why ...
+- we also want thinks to be reproducable and automated
+    - if something breaks and it hurts, it's not well automated
 
 ============
 
