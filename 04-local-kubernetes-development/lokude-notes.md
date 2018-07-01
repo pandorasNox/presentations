@@ -1,7 +1,6 @@
 
 Title ideas:
-- the different shapes of local kubernetes development
-- local kubernetes workflows
+- the different shades of local kubernetes development
 
 - today I want to tak about three topics
     - kubernetes
