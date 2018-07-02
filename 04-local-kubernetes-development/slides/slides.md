@@ -19,6 +19,27 @@ Note: test note
 
 <!-- ========== ========== ========== -->
 
+``` shell
+$ whoami
+
+name: Tino Stöckel
+
+where                   position
+---------------------------------------------------------------
+Turbine Kreuzberg GmbH  Platform Engineer
+Circus Internet GmbH    Senior Developer / System Operator
+Medici Living GmbH      Senior Developer
+
+**skills**
+- Kubernetes            - Ansible
+- Docker                - JavaScript / Python / Go (working on)
+
+... use -v for verbose
+
+```
+
+<!-- ========== ========== ========== -->
+
 ## Abstract
 <blockquote style="font-size: .85em; text-align: justify;">
 In a world for developer and **cloud native apps** we should not forget about our local **workflows** to keep the **developer** throuhput smooth and in a flow. Since **Kubernetes** gained a lot of traction and is currently right in the center of this debate we shall not miss to grasp a look at its local capabilities, workflows, flaws and it's quirks.
