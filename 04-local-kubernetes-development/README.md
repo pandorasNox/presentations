@@ -20,3 +20,4 @@ In a world for developer and cloud native apps we should not forget about our lo
 #### resources
 - kubeadm-dind-cluster
 - https://github.com/kubernetes/kubernetes/blob/master/hack/local-up-cluster.sh
+- https://blog.digitalocean.com/vault-and-kubernetes/
