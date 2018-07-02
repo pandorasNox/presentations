@@ -124,6 +124,9 @@ Note:
 - Kubernetes for **Kubernetes developers**
 - ... probably more
 
+Note:
+headline: Access to Kubernetes ?
+
 <!-- ========== ========== ========== -->
 
 ### what are you doing local?
@@ -153,7 +156,7 @@ Note: I assume
 <!-- ---------- ---------- ---------- -->
 
 ### what are you doing local?
-#### SysOp edition
+#### Kubernetes Developer edition
 
 - set up infrastructure
 - provision infrastructure
@@ -166,13 +169,15 @@ Note: I assume
 <!-- ========== ========== ========== -->
 ## Tools
 
-- minikube / docker-for-desktop ednge (OSX/WIN)
+- minikube
 - kubeadm-dind-cluster
 - vagrant
 
 <!-- ========== ========== ========== -->
 
 ## minikube
+
+- alternative: docker-for-desktop edge (OSX/WIN)
 
 <!-- ========== ========== ========== -->
 
