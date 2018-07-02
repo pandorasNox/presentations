@@ -79,7 +79,7 @@ we also have to ask
 - what kind of role do I fullfill
 - what kind of workflow needs this role?
 
-what kind of workflow do you need (based on your position)
+what kind of workflow do you need (based on your role)
 
 -----
 
@@ -220,3 +220,113 @@ anecdoetes
         - enabled new equipment
         - which brought you to a hole new level?
         - something which turned the world upside down?
+
+======
+
+why or why not to do bare metal
+- you have the financial resources
+- you don't need the bare metal process power
+- you don't need a special kubernetes infrastructure
+
+=====
+
+so the differend shades
+
+I created the following graphic
+and what you may or may not want to do is think a little about
+- your role
+- what you try to accomplish
+
+- as you can see there are strict zones and overlapping zones
+
+example
+- first I show you a really simple example with docker
+    - deploying two services who talk to each other
+    - the steps are
+        - ensure docker runs
+        - write a docker-compose file or bash file for your services
+        - run docker-compose up
+- as application developer
+    - we can mirror similar steps with just minikube
+        - and actually each other cluster size
+    - steps are
+        - start cluster and ensure is running
+        - write some yaml configuration
+        - apply the configuration
+    - if you check now
+        - same result as with docker
+    - not really complicated
+    - just enough for application developers
+    - only a little yaml overhead
+
+========
+
+- goal is to provide a nice workflow basic
+- fortunatly developers are clever
+    - they'll integrate this in ther personal workflow
+    - or find something for them which fits better for them
+    - maybe something which can influence a new basic setup
+- on the other hand it's nice to give developers something simple like a
+    - make setup
+    - e.g. frontend developers
+        - who never got in contact with ops related tasks yet
+- your developers won't take days to spin up a setup
+
+========
+
+we advocat for
+    - each developer has diff entry levels
+    - each team should have a kube dev eventually
+    - each developer get the opportunity to develop this skills
+
+- you want that in your teams
+    - bright spectrum from dev to ops skills
+    - want that this knowledge / spectrume exists acroos the teams
+
+========
+
+- kubernetes
+    - gives you an amazing abstraction over you infrastructe
+        - let's see and treat all you little server as they were one giant computer
+    - it's declarative
+        - uses configuration as code
+        - describing a desired state
+        - kubernetes is doing the rest
+    - gives you an amazing API thanks to kubectl
+
+=======
+
+- examples (by roles)
+    - delpoy app, mount volume
+    - deploy app + docker-registry
+    - create a certain kubernetes structure
+    - deploy operator
+
+- examples by tools
+    - minikube
+        - app deploy
+    - kubeadm-dind-cluster
+        - sheduler deploy
+    - vagrant
+        - ...
+
+======
+
+- conclustion
+    - bring coffee, mate and pizza
+
+- conclusion
+    - enable your devs to run a local cluster
+    - think about what you want to achive
+    - provide a basic workflow
+
+=========
+
+- kubernetes wants you to look at resources
+    - but from the view from the application
+    - not the view of the infrastructure
+- infrastructre says
+    - this is my limit
+- app says
+    - this is what I need
+- kubernetes takes care to match it
