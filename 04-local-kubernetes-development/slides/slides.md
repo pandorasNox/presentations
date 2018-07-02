@@ -176,7 +176,8 @@ Note: I assume
 <!-- ========== ========== ========== -->
 
 ## minikube
-
+- tool to run Kubernetes locally
+- runs a single-node Kubernetes cluster
 - alternative: docker-for-desktop edge (OSX/WIN)
 
 <!-- ========== ========== ========== -->
@@ -198,6 +199,7 @@ Note: I assume
 - sheduleing across node
     - loose affinity and anti-affinity
 - (data) distribution
+- node networking ...
 
 <!-- ========== ========== ========== -->
 
