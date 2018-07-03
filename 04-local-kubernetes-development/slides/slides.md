@@ -149,6 +149,7 @@ Note: I assume
 
 - set up infrastructure
 - provision infrastructure
+- (opt) write some code
 - check if it works
 
 Note: I assume
@@ -158,10 +159,10 @@ Note: I assume
 ### what are you doing local?
 #### Kubernetes Developer edition
 
-- set up infrastructure
-- provision infrastructure
-- check if it works
-- write some code
+- (opt) set up infrastructure
+- (opt) provision infrastructure
+- (opt) check if it works
+- write Kubernetes specific code
 - check if your code works
 
 Note: I assume
