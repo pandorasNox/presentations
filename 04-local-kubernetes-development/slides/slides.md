@@ -19,6 +19,13 @@ Note: test note
 
 <!-- ========== ========== ========== -->
 
+## Abstract
+<blockquote style="font-size: .85em; text-align: justify;">
+In a world for developer and **cloud native apps** we should not forget about our local **workflows** to keep the **developer** throuhput smooth and in a flow. Since **Kubernetes** gained a lot of traction and is currently right in the center of this debate we shall not miss to grasp a look at its local capabilities, workflows, flaws and it's quirks.
+</blockquote>
+
+<!-- ========== ========== ========== -->
+
 ``` shell
 $ whoami
 
@@ -40,22 +47,44 @@ Medici Living GmbH      Senior Developer
 
 <!-- ========== ========== ========== -->
 
-## Abstract
-<blockquote style="font-size: .85em; text-align: justify;">
-In a world for developer and **cloud native apps** we should not forget about our local **workflows** to keep the **developer** throuhput smooth and in a flow. Since **Kubernetes** gained a lot of traction and is currently right in the center of this debate we shall not miss to grasp a look at its local capabilities, workflows, flaws and it's quirks.
-</blockquote>
+### Kubernetes at Turbine Kreuzberg
+
+<img
+    src="media/maxi_baremetal.JPG"
+    height="400"
+    style=" box-shadow: none; border: none;"
+/>
 
 <!-- ========== ========== ========== -->
 
 ## Content
-<ul>
+<!-- <ul>
     <li>
         <img src="media/kube-logo.svg" height="50" style="box-shadow: none; border: none; margin: 0;">
         <span>Kubernetes</span>
     </li>
     <li>(developer) workflow</li>
     <li>local development</li>
-</ul>
+</ul> -->
+<div style="display: flex; justify-content: space-between;">
+    <img
+        src="media/kube-logo.svg"
+        height="200"
+        style=" box-shadow: none; border: none;"
+    />
+
+    <img
+        src="media/flow-dia2.svg"
+        height="250"
+        style=" box-shadow: none; border: none;"
+    />
+
+    <img
+        src="media/tante-emma-laden.jpg"
+        height="200"
+        style=" box-shadow: none; border: none;"
+    />
+</div>
 
 Note:
 - todo: use signs
@@ -68,6 +97,7 @@ Note:
 <!-- ========== ========== ========== -->
 
 ## Kubernetes
+- infrastructure framework
 - declarative
 - desired state
 - kubectl
@@ -85,7 +115,7 @@ spec:
   selector:
     matchLabels:
       app: nginx
-  replicas: 2 # tells deployment to run 2 pods matching the template
+  replicas: 2
   template:
     metadata:
       labels:
@@ -104,37 +134,23 @@ spec:
 
 <!-- ========== ========== ========== -->
 
-## Actors and Roles
-- what kind of roles can an actor fullfill
-- what kind of workflow needs an according role?
-
-<!-- ---------- ---------- ---------- -->
-
-## Actor = Developer
-- what skills has a developer
-
-Note:
-- present fred george model
-
-<!-- ========== ========== ========== -->
-
 ### applications of Kubernetes
-- Kubernetes for **application developer**
-- Kubernetes for **SysOps**
-- Kubernetes for **Kubernetes developers**
-- ... probably more
+- **application development**
+- **System Operations**
+- **Kubernetes/Operator development**
 
 Note:
-headline: Access to Kubernetes ?
+- ... probably more
+- lines are blurred
 
 <!-- ========== ========== ========== -->
 
 ### what are you doing local?
 
-<!-- ---------- ---------- ---------- -->
+<!-- ========== ========== ========== -->
 
 ### what are you doing local?
-#### developer edition
+#### application development edition
 
 - write some code
 - have some sorts of local env
@@ -142,10 +158,21 @@ headline: Access to Kubernetes ?
 
 Note: I assume
 
-<!-- ---------- ---------- ---------- -->
+<!-- ========== ========== ========== -->
+
+## minikube
+- mainstream tool to run locally
+- runs a single-node cluster
+- runs in an vm
+
+<!-- ========== ========== ========== -->
+
+## demo time
+
+<!-- ========== ========== ========== -->
 
 ### what are you doing local?
-#### SysOp edition
+#### System Operations edition
 
 - set up infrastructure
 - provision infrastructure
@@ -154,10 +181,21 @@ Note: I assume
 
 Note: I assume
 
-<!-- ---------- ---------- ---------- -->
+<!-- ========== ========== ========== -->
+
+## vagrant
+- runs a single/multi-node cluster
+- runs in vm's
+- closest to real baremetal
+
+<!-- ========== ========== ========== -->
+
+## demo time
+
+<!-- ========== ========== ========== -->
 
 ### what are you doing local?
-#### Kubernetes Developer edition
+#### Kubernetes Development edition
 
 - (opt) set up infrastructure
 - (opt) provision infrastructure
@@ -168,58 +206,42 @@ Note: I assume
 Note: I assume
 
 <!-- ========== ========== ========== -->
+
+## kubeadm-dind-cluster
+- runs a multi-node cluster
+- runs in docker
+- uses docker-in-docker
+
+<!-- ========== ========== ========== -->
+
+## demo time
+
+<!-- ========== ========== ========== -->
+
 ## Tools
 
 - minikube
-- kubeadm-dind-cluster
 - vagrant
+- kubeadm-dind-cluster
+- ... probably more
 
 <!-- ========== ========== ========== -->
 
-## minikube
-- tool to run Kubernetes locally
-- runs a single-node Kubernetes cluster
-- alternative: docker-for-desktop edge (OSX/WIN)
+### Conclusion
+
+<img
+    src="media/mini_baremetal.JPG"
+    height="350"
+    style=" box-shadow: none; border: none;"
+/>
 
 <!-- ========== ========== ========== -->
 
-## demo time
+# Thanks
 
-<!-- ========== ========== ========== -->
+playground:
+- https://github.com/pandorasNox/local-kubernetes
 
-## minikube
-#### what it can
-- kubectl API
-- deployments, services, NodeIP's, 
-
-<!-- ========== ========== ========== -->
-
-## minikube
-#### what it can't
-
-- sheduleing across node
-    - loose affinity and anti-affinity
-- (data) distribution
-- node networking ...
-
-<!-- ========== ========== ========== -->
-
-## kubeadm-dind-cluster
-
-<!-- ========== ========== ========== -->
-
-## demo time
-
-<!-- ========== ========== ========== -->
-
-#### what it can
-#### what it can't
-
-<!-- ========== ========== ========== -->
-
-## demo time
-
-<!-- ========== ========== ========== -->
-
-#### what it can
-#### what it can't
+slides:
+- https://github.com/pandorasNox/presentations
+- 04-local-kubernetes-development
