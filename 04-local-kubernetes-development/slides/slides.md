@@ -21,7 +21,7 @@ Note: test note
 
 ## Abstract
 <blockquote style="font-size: .85em; text-align: justify;">
-In a world for developer and **cloud native apps** we should not forget about our local **workflows** to keep the **developer** throuhput smooth and in a flow. Since **Kubernetes** gained a lot of traction and is currently right in the center of this debate we shall not miss to grasp a look at its local capabilities, workflows, flaws and it's quirks.
+In a world for developers and **cloud native apps** we should not forget about our local **workflows** to keep the **developer** throughput smooth and in a flow. Since **Kubernetes** gained a lot of traction and is currently right in the center of this debate we shall not miss to grasp a look at its local capabilities, workflows, flaws and its quirks.
 </blockquote>
 
 <!-- ========== ========== ========== -->
@@ -38,7 +38,7 @@ Circus Internet GmbH    Senior Developer / System Operator
 Medici Living GmbH      Senior Developer
 
 **skills**
-- Kubernetes            - Ansible
+- Kubernetes            - Ansible           - Gitlab-CI
 - Docker                - JavaScript / Python / Go (working on)
 
 ... use -v for verbose
@@ -136,7 +136,7 @@ spec:
 
 ### applications of Kubernetes
 - **application development**
-- **System Operations**
+- **system operations**
 - **Kubernetes/Operator development**
 
 Note:
@@ -145,11 +145,11 @@ Note:
 
 <!-- ========== ========== ========== -->
 
-### what are you doing local?
+### what are you doing locally?
 
 <!-- ========== ========== ========== -->
 
-### what are you doing local?
+### what are you doing locally?
 #### application development edition
 
 - write some code
