@@ -10,3 +10,8 @@ make start-talk
 ```
 make env
 ```
+
+## Abstract
+Title: Shades of Kubernetes
+
+... coming soon
