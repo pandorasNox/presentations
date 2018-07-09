@@ -1,6 +1,6 @@
 
 Title ideas:
-- the different shades of local kubernetes development
+- local Kubernetes development
 
 - today I want to tak about three topics
     - kubernetes
@@ -34,6 +34,9 @@ Title ideas:
             - weave
             - flannel
             - ...
+    - resource concept
+        - nodes / pods / services
+        - ...
 
 How or even can this integrate with our local workflow?
 
