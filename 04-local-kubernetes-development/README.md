@@ -54,3 +54,4 @@ In a world for developer and cloud native apps we should not forget about our lo
     - add explanaition !!!
     - make own scheduler working
 - operator / admission controler example
+- write my own => https://github.com/linki/chaoskube/blob/master/chaoskube/chaoskube.go
