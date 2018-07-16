@@ -347,3 +347,12 @@ depth application developers needs to understand kubernetes
     - services
     - deployments
     - pods
+
+drive
+- intrinsic nature
+
+when minikube is not enough
+- scheduler
+- operators
+- controllers
+- state / storage
