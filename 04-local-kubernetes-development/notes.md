@@ -333,3 +333,17 @@ we advocat for
 - app says
     - this is what I need
 - kubernetes takes care to match it
+
+=========
+
+depth application developers needs to understand kubernetes
+- not completely sure
+- something like this:
+    - kubectl
+        - deploy + debug
+    - nodes
+    - dns
+    - ingress
+    - services
+    - deployments
+    - pods
