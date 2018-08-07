@@ -1,6 +1,13 @@
 
 Title ideas:
 - local Kubernetes development
+- Noone needs a (real) cluster
+- Noone cares for a real cluster
+- Noone cares for your cluster
+- Noone cares for a cluster
+subtitle:
+- local Kubernetes development
+
 
 - today I want to tak about three topics
     - kubernetes

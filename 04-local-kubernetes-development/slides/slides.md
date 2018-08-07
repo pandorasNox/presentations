@@ -1,5 +1,5 @@
 ---
-title: the different shades of local kubernetes development
+title: No one needs a real cluster | Kubernetes - a local path
 separator: <!-- ========== ========== ========== -->
 verticalSeparator: <!-- ---------- ---------- ---------- -->
 theme: sky
@@ -7,7 +7,7 @@ revealOptions:
     # transition: 'fade'
 ---
 
-## the different shades of local kubernetes development
+### No one needs a real cluster
 
 <img
     src="media/kube-logo.svg"
@@ -15,14 +15,10 @@ revealOptions:
     style=" box-shadow: none; border: none;"
 />
 
-Note: test note
+### Kubernetes - a local path
 
-<!-- ========== ========== ========== -->
-
-## Abstract
-<blockquote style="font-size: .85em; text-align: justify;">
-In a world for developers and **cloud native apps** we should not forget about our local **workflows** to keep the **developer** throughput smooth and in a flow. Since **Kubernetes** gained a lot of traction and is currently right in the center of this debate we shall not miss to grasp a look at its local capabilities, workflows, flaws and its quirks.
-</blockquote>
+Note:
+- test note
 
 <!-- ========== ========== ========== -->
 
@@ -39,7 +35,7 @@ Medici Living GmbH      Senior Developer
 
 **skills**
 - Kubernetes            - Ansible           - Gitlab-CI
-- Docker                - JavaScript / Python / Go (working on)
+- Docker                - JavaScript / Python / Go
 
 ... use -v for verbose
 
@@ -47,7 +43,8 @@ Medici Living GmbH      Senior Developer
 
 <!-- ========== ========== ========== -->
 
-### Kubernetes at Turbine Kreuzberg
+### Kubernetes @ 
+### Turbine Kreuzberg
 
 <img
     src="media/maxi_baremetal.JPG"
@@ -57,46 +54,42 @@ Medici Living GmbH      Senior Developer
 
 <!-- ========== ========== ========== -->
 
-## Content
-<!-- <ul>
-    <li>
-        <img src="media/kube-logo.svg" height="50" style="box-shadow: none; border: none; margin: 0;">
-        <span>Kubernetes</span>
-    </li>
-    <li>(developer) workflow</li>
-    <li>local development</li>
-</ul> -->
-<div style="display: flex; justify-content: space-between;">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+
     <img
-        src="media/kube-logo.svg"
+        src="media/minikube-logo.png"
         height="200"
         style=" box-shadow: none; border: none;"
     />
 
+    <h4
+        style="font-size: 1.3em;"
+    >
+        <span>kubeadm</span>
+        <br />
+        <span>-dind-</span>
+        <br />
+        <span>cluster</span>
+    </h4>
+
     <img
-        src="media/flow-dia2.svg"
-        height="250"
+        src="media/virtualbox_logo.png"
+        height="245"
         style=" box-shadow: none; border: none;"
     />
 
-    <img
-        src="media/tante-emma-laden.jpg"
-        height="200"
-        style=" box-shadow: none; border: none;"
-    />
 </div>
 
-Note:
-- todo: use signs
+<!-- ========== ========== ========== -->
+
+## Kubernetes - why
+- k8s api
+- k8s automatisms
+- real scaling & distribution capability
 
 <!-- ========== ========== ========== -->
 
-## Kubernetes
-## but why?
-
-<!-- ========== ========== ========== -->
-
-## Kubernetes
+### Kubernetes - what / how
 - infrastructure framework
 - declarative
 - desired state
@@ -130,18 +123,25 @@ spec:
 
 <!-- ========== ========== ========== -->
 
-## Workflow
+#### CNCF - The Cloud Native Trail Map
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+
+    <img
+        src="media/cncf_trail_map_cut.png"
+        height="600"
+        style=" box-shadow: none; border: none;"
+    />
+
+</div>
 
 <!-- ========== ========== ========== -->
+
 
 ### applications of Kubernetes
 - **application development**
 - **system operations**
 - **Kubernetes/Operator development**
-
-Note:
-- ... probably more
-- lines are blurred
 
 <!-- ========== ========== ========== -->
 
