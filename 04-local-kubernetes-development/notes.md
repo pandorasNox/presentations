@@ -8,6 +8,37 @@ Title ideas:
 subtitle:
 - local Kubernetes development
 
+- source to check out:
+    - https://www.youtube.com/watch?v=_W6O_pfA00s
+        - why are we so bad at pitching kubernetes / describing it
+            - to developers
+        - a very introductery kind of talk
+        - upstream tooling (minikube)
+            - later maybe additional tooling
+        - kubernetes
+            - an ops tool
+            - for site relibalety engineers
+            - high availability
+        - rarly has any type of value / resonance for developers
+        - tons of termology
+            - loadbalancing, sclaing, delivery automation
+            - developers don't care for that kind
+        - kubernetes just focus an core compentancy
+            - making thinks faster more performent
+            - ask what is an app
+            - there is no clear upsteam definition, what an app is
+                - workloads?
+                - docker?
+        - why Kubernetes - development velocity
+            - an approach to onboard it
+                - getting started is easy
+                - share what you know (model your I/O - as developers)
+                - choose the right toolchain
+            - getting started is easy
+                - kubernetes env (minikube)
+                - not having a k env ready is not an excuse
+                - everyone get a kubernetes
+            - kubectl run --dry-run
 
 - today I want to tak about three topics
     - kubernetes
