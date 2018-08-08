@@ -28,16 +28,16 @@ $ whoami
 name: Tino Stöckel
 
 where                   position
----------------------------------------------------------------
+-----------------------------------------------------------
 Turbine Kreuzberg GmbH  Platform Engineer
 Circus Internet GmbH    Senior Developer / System Operator
 Medici Living GmbH      Senior Developer
 
-**skills**
+skills
+-----------------------------------------------------------
 - Kubernetes            - Ansible           - Gitlab-CI
-- Docker                - JavaScript / Python / Go
-
-... use -v for verbose
+- Docker                - JavaScript        - Python / Go
+...
 
 ```
 
@@ -52,40 +52,50 @@ Medici Living GmbH      Senior Developer
     style=" box-shadow: none; border: none;"
 />
 
+Note:
+- doin bare metal
+- this days with dedicated clouds nodes
+- running currently 5 different clusters
+- experience with scale
+
 <!-- ========== ========== ========== -->
+
+### a little
+### demo app first
+
+<!-- ========== ========== ========== -->
+
+#### CNCF - The Cloud Native Trail Map
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
 
     <img
-        src="media/minikube-logo.png"
-        height="200"
-        style=" box-shadow: none; border: none;"
-    />
-
-    <h4
-        style="font-size: 1.3em;"
-    >
-        <span>kubeadm</span>
-        <br />
-        <span>-dind-</span>
-        <br />
-        <span>cluster</span>
-    </h4>
-
-    <img
-        src="media/virtualbox_logo.png"
-        height="245"
+        src="media/cncf_trail_map_cut.png"
+        height="600"
         style=" box-shadow: none; border: none;"
     />
 
 </div>
 
+Note:
+- Cloud Native Computing Foundation
+    - create and drive the adoption of a new computing paradigm
+    - open source community
+
 <!-- ========== ========== ========== -->
 
 ## Kubernetes - why
 - k8s api
-- k8s automatisms
-- real scaling & distribution capability
+- k8s automatism
+- handles distribution problems
+
+<!-- ========== ========== ========== -->
+
+### It has won:
+- Googles GKE (since 2015)
+- Microsofts AKS (since 2017)
+- Amazons AWS EKS (since 2018)
+- DigitalOcean (beta SEP 2018)
 
 <!-- ========== ========== ========== -->
 
@@ -123,40 +133,31 @@ spec:
 
 <!-- ========== ========== ========== -->
 
-#### CNCF - The Cloud Native Trail Map
-
 <div style="display: flex; justify-content: space-between; align-items: center;">
 
     <img
-        src="media/cncf_trail_map_cut.png"
-        height="600"
+        src="media/minikube-logo.png"
+        height="200"
+        style=" box-shadow: none; border: none;"
+    />
+
+    <h4
+        style="font-size: 1.3em;"
+    >
+        <span>kubeadm</span>
+        <br />
+        <span>-dind-</span>
+        <br />
+        <span>cluster</span>
+    </h4>
+
+    <img
+        src="media/virtualbox_logo.png"
+        height="245"
         style=" box-shadow: none; border: none;"
     />
 
 </div>
-
-<!-- ========== ========== ========== -->
-
-
-### applications of Kubernetes
-- **application development**
-- **system operations**
-- **Kubernetes/Operator development**
-
-<!-- ========== ========== ========== -->
-
-### what are you doing locally?
-
-<!-- ========== ========== ========== -->
-
-### what are you doing locally?
-#### application development edition
-
-- write some code
-- have some sorts of local env
-- check if your code works
-
-Note: I assume
 
 <!-- ========== ========== ========== -->
 
@@ -167,43 +168,31 @@ Note: I assume
 
 <!-- ========== ========== ========== -->
 
+#### Install minikube
+
+``` bash
+# macOS
+brew cask install minikube
+```
+
+``` bash
+# Linux
+curl -Lo minikube \
+https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && \
+chmod +x minikube && \
+sudo cp minikube /usr/local/bin/ && \
+rm minikube
+```
+
+#### start minikube
+``` bash
+# uses default driver virtualbox
+minikube start
+```
+
+<!-- ========== ========== ========== -->
+
 ## demo time
-
-<!-- ========== ========== ========== -->
-
-### what are you doing local?
-#### System Operations edition
-
-- set up infrastructure
-- provision infrastructure
-- (opt) write some code
-- check if it works
-
-Note: I assume
-
-<!-- ========== ========== ========== -->
-
-## vagrant
-- runs a single/multi-node cluster
-- runs in vm's
-- closest to real baremetal
-
-<!-- ========== ========== ========== -->
-
-## demo time
-
-<!-- ========== ========== ========== -->
-
-### what are you doing local?
-#### Kubernetes Development edition
-
-- (opt) set up infrastructure
-- (opt) provision infrastructure
-- (opt) check if it works
-- write Kubernetes specific code
-- check if your code works
-
-Note: I assume
 
 <!-- ========== ========== ========== -->
 
@@ -218,12 +207,42 @@ Note: I assume
 
 <!-- ========== ========== ========== -->
 
-## Tools
+## vagrant
+- runs a single/multi-node cluster
+- runs in vm's
+- closest to real baremetal
 
-- minikube
-- vagrant
-- kubeadm-dind-cluster
-- ... probably more
+<!-- ========== ========== ========== -->
+
+## demo time
+
+<!-- ========== ========== ========== -->
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+
+    <img
+        src="media/minikube-logo.png"
+        height="200"
+        style=" box-shadow: none; border: none;"
+    />
+
+    <h4
+        style="font-size: 1.3em;"
+    >
+        <span>kubeadm</span>
+        <br />
+        <span>-dind-</span>
+        <br />
+        <span>cluster</span>
+    </h4>
+
+    <img
+        src="media/virtualbox_logo.png"
+        height="245"
+        style=" box-shadow: none; border: none;"
+    />
+
+</div>
 
 <!-- ========== ========== ========== -->
 
@@ -238,10 +257,26 @@ Note: I assume
 <!-- ========== ========== ========== -->
 
 # Thanks
+<div style="font-size: 1em; text-align: left;">
 
-playground:
-- https://github.com/pandorasNox/local-kubernetes
+demo app:
+<br />
+https://github.com/pandorasNox/kubestagram
 
-slides:
-- https://github.com/pandorasNox/presentations
-- 04-local-kubernetes-development
+<br />
+<br />
+
+k8s playground:
+<br />
+https://github.com/pandorasNox/local-kubernetes
+
+<br />
+<br />
+
+presentation:
+<br />
+https://github.com/pandorasNox/presentations
+<br />
+    => /04-local-kubernetes-development
+
+</div>
