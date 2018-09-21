@@ -7,7 +7,6 @@
 - project based cli's
 - local CI/CD
 - react-core-filer / property-selector
-- static-site enterprise recommendations deconstructed
 - static-site CI/CD edge case(s)
 - learn to automate the setup of a bare metal k8s cluster
 - how I approched vue.js and its ecosystem
