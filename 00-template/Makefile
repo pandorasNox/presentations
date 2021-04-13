@@ -19,12 +19,12 @@ help: ##@other Show this help.
 
 .PHONY: setup
 setup: ##@setup sets up all basic stuff for the presentation
-	docker build -t reveal-md:2.0.5 docker/reveal-md/
+	docker build -t reveal-md:4.3.0 docker/reveal-md/
 
 .PHONY: start-talk
 start-talk: ##@setup inits talk/slides.
 	# $(MAKE) another-make-command
-	docker run -it --rm -v $(PWD):/source -p 9999:9999 reveal-md:2.0.5 sh -c "cd /source; reveal-md './slides' --port 9999"
+	docker run -it --rm -v $(PWD):/source -p 9999:9999 reveal-md:4.3.0 sh -c "cd /source; reveal-md './slides' --port 9999"
 
 .PHONY: talk-specific-command
 talk-specific-command: ##@talk specfiv command for the talk

@@ -1,3 +1,3 @@
-FROM node:8.11.2-alpine
+FROM node:14.16.1-alpine
 
-RUN npm install -g reveal-md@2.0.5
+RUN npm install -g reveal-md@4.3.0
